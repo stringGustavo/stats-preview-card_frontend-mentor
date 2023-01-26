@@ -3,8 +3,10 @@
 
 body {
     background-color: hsl(233, 47%, 7%);
-    width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-mobile {
@@ -12,12 +14,10 @@ body {
 }
 
 .container {
-    width: 1100px;
+    width: 68em;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 50px;
     background-color: hsl(244, 38%, 16%);
     border-radius: 8px;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
@@ -25,8 +25,8 @@ body {
 
 .text {
     font-family: 'Inter';
-    font-size: 18px;
-    margin: 60px;
+    font-size: 1.14rem;
+    margin: 3.3em;
 }
 
 .title {
@@ -35,10 +35,10 @@ body {
 
 .main-paragraph {
     line-height: 1.6;
-    font-size: 15px;
+    font-size: 0.95rem;
     color: hsla(0, 0%, 100%, 0.75);
     padding: 30px 0 80px 0;
-    margin-right: 50px;
+    margin-right: 2rem;
 }
 
 .color {
@@ -46,6 +46,10 @@ body {
 }
 
 .image {
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
     border-radius: 0 8px 8px 0;
 }
 
@@ -57,7 +61,12 @@ body {
 
 .stats-paragraph {
     color: hsla(0, 0%, 100%, 0.6);
-    padding-top: 5px;
+    padding-top: 0.2em;
     font-family: 'Lexend Deca';
-    font-size: 15px;
+    font-size: 0.97rem;
+}
+
+.image-container {
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 0 8px 8px 0;
 }
